@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Charie 💜</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#5b2c83,#d16ba5);color:#fff;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+h1{font-size:3rem}
+.card{max-width:800px;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);padding:24px;border-radius:20px;line-height:1.7}
+button{padding:14px 28px;border:none;border-radius:30px;font-size:18px;background:#fff;color:#6a1b9a;cursor:pointer}
+.heart{position:fixed;top:-20px;animation:fall 8s linear infinite;opacity:.8}
+@keyframes fall{to{transform:translateY(110vh)}}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>🎉 Happy Birthday<br>Chasumi Nuhu (Charie 💜)</h1>
+<p>To my favorite person ❤️</p>
+<button onclick="document.getElementById('msg').scrollIntoView({behavior:'smooth'})">Open My Letter 💌</button>
+</div>
+<div id="msg" class="hero">
+<div class="card">
+<h2>Happy Birthday to my favorite person. ❤️</h2>
+<p>I honestly don't know where to start because you've become such an important part of my life.</p>
+<p>Ever since we first met at church, and all the moments we shared at Autis' house, you've always been a source of joy to me. Looking back now, I'm just grateful that fate brought us together because you're one of the best souls I've met in years.</p>
+<p>You've been there through so many moments, making me laugh, encouraging me without even realizing it, and just being your amazing self. You mean so much to me, and I love you more than words can explain.</p>
+<p>I pray God continues to favor you in every area of your life. May your light keep shining brighter every single day, and may you never lose the beautiful heart you have for God. Keep loving Him the way you always have, because it's one of the things I admire most about you.</p>
+<p>I may not have said this before, but you're actually my mentor in so many ways. I've learned a lot from you, and I genuinely love everything about you.</p>
+<p>Thank you for being you. Keep smiling, keep growing, and never change.</p>
+<p><b>Happy Birthday once again, my cute but senseless best friend. 😂❤️ I love you so much, and I pray this new year brings you nothing but happiness, peace, and countless reasons to smile.</b></p>
+<p style="text-align:right">— Made with ❤️ by Christopher</p>
+</div>
+</div>
+<script>
+for(let i=0;i<40;i++){
+ let h=document.createElement('div');
+ h.className='heart';
+ h.textContent='💜';
+ h.style.left=Math.random()*100+'vw';
+ h.style.animationDelay=(Math.random()*8)+'s';
+ h.style.fontSize=(16+Math.random()*18)+'px';
+ document.body.appendChild(h);
+}
+</script>
+</body>
+</html>
